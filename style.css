@@ -31,6 +31,10 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+input, select, textarea{
+    font-weight: 900;
+    font-family: "Courier", monospace;
+}
 input {
   font-size: 19px;
   border: 5px solid #fa5959;
