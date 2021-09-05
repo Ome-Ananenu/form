@@ -3,6 +3,11 @@ body {
   background-image: url("./images/img.png");
   background-repeat: no-repeat;
 }
+.label{
+  display: flex;
+  justify-content: space-around;
+  line-height: 300%;
+}
 .required:after {
   content: " *";
   color: red;
@@ -13,12 +18,10 @@ body {
   flex-direction: column;
   margin: 0 auto;
   padding: 50px 0;
-  padding-left: 200px;
   color: white;
-  width: 50%;
+  width: 40%;
   height: 50%;
   font-size: 25px;
-  line-height: 300%;
   font-family: "Courier Prime", monospace;
 }
 input:focus,
@@ -32,28 +35,36 @@ input {
   border-radius: 3px;
 }
 .name {
-  margin-left: 198px;
+  margin-left: 100px;
   width: 50%;
   height: 40px;
 }
 .email {
-  margin-left: 183px;
+  margin-left: 89px; 
   width: 50%;
   height: 40px;
 }
 .token {
-  margin-left: 92px;
   width: 50%;
   height: 40px;
 }
+.privacy-div{
+  display: flex;
+  justify-content: center;
+  /* line-height: 300%; */
+}
 .privacy {
-  margin-left: 190px;
   font-size: 22px;
 }
 .privacy-check {
   padding: 100px;
   width: 30px;
   height: 20px;
+}
+.validation-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .validationmsg {
   font-family: "Courier New", Courier, monospace;
@@ -62,9 +73,9 @@ input {
   background-color: white;
   color: red;
   width: 450px;
-  height: 60px;
-  margin-left: 190px;
-  margin-bottom: 10px;
+  height: 30px;
+  padding-top: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 button {
@@ -76,7 +87,6 @@ button {
   border: 3px solid;
   border-radius: 12px;
   font-size: 20px;
-  margin-left: 350px;
   font-family: "Courier Prime", monospace;
 }
 @media (max-width: 768px) {

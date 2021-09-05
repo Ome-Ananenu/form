@@ -38,13 +38,17 @@
             <label class="label">
             <span class="required">Activation Token</span><input class="token" type="password" name="activation_token" id="activation-token"/>
             </label>
-            <label>
+            <label class="privacy-div">
             <span class="privacy required">You agree to the <a href="privacy_policy">privacy policy</a></span>
             <input class="privacy-check" type="checkbox" name="privacy_policy_accepted" id="privacy-policy" required/>
             </label>
             <input type="hidden" name="csrf_token" value="6be08b80-cf65-47a0-b636-19f876ee27bf"/>
-            <div class="validationmsg" id="validationmsg"></div>
-            <button type="submit">Submit</button>
+            <div class="validation-div">
+              <div class="validationmsg" id="validationmsg"></div>
+              <button type="submit">Submit</button>
+
+            </div>
+            
          </div> 
     </form>
   </body>
