@@ -36,12 +36,12 @@ input {
   border-radius: 3px;
 }
 .name {
-  margin-left: 100px;
+  margin-left: 87px;
   width: 50%;
   height: 40px;
 }
 .email {
-  margin-left: 89px; 
+  margin-left: 73px; 
   width: 50%;
   height: 40px;
 }
@@ -52,10 +52,10 @@ input {
 .privacy-div{
   display: flex;
   justify-content: center;
-  /* line-height: 300%; */
+  padding-top: 20px;
 }
 .privacy {
-  font-size: 22px;
+  font-size: 18px;
 }
 .privacy-check {
   padding: 100px;
