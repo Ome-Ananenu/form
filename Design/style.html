@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <script></script>
+  <body>
+    <script>
+      function check() {
+        let fields = [`name`,`email`,`activation-token`,`privacy-policy`];
+        for (let i = 0; i < fields.length; i++) {
+          let fieldValue = document.forms["myForm"][`${i}`].value;
+          if (fieldValue == "" || fieldValue == null ) {
+            document.getElementById(fields[i]).style.border= "8px solid red";
+            document.getElementById("validationmsg").innerHTML = (fields[i]).toUpperCase() + " MUST BE FILLED OUT!!!";
+            return false;
+          }
+          document.getElementById(fields[i]).style.border= "0";
+        }
+      }
+    </script>
+      <form name="myForm" id="myForm" action="http://server.example/activation" onsubmit="return check()" method="post" required>
+          <div class="form-wrapper">
+            <label class="label">
+            <span class="required">Your Name</span><input class="name" type="text" name="name" id="name"/>
+            </label>
+            <label class="label">
+            <span class="required">Your Email</span><input class="email" type="email" name="email" id="email"/>
+            </label>
+            <label class="label">
+            <span class="required">Activation Token</span><input class="token" type="password" name="activation_token" id="activation-token"/>
+            </label>
+            <label>
+            <span class="privacy required">You agree to the <a href="privacy_policy">privacy policy</a></span>
+            <input class="privacy-check" type="checkbox" name="privacy_policy_accepted" id="privacy-policy" required/>
+            </label>
+            <input type="hidden" name="csrf_token" value="6be08b80-cf65-47a0-b636-19f876ee27bf"/>
+            <div class="validationmsg" id="validationmsg"></div>
+            <button type="submit">Submit</button>
+         </div> 
+    </form>
+  </body>
+</html>

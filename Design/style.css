@@ -1,0 +1,146 @@
+body {
+  background-color: white;
+  background-image: url("./img.png");
+  background-repeat: no-repeat;
+}
+.required:after {
+  content: " *";
+  color: red;
+}
+.form-wrapper {
+  display: flex;
+  background-color: #fa5959;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 0;
+  padding-left: 200px;
+  color: white;
+  width: 50%;
+  height: 50%;
+  font-size: 25px;
+  line-height: 300%;
+  font-family: "Courier Prime", monospace;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+input {
+  font-size: 19px;
+  border: 5px solid #fa5959;
+  border-radius: 3px;
+}
+.name {
+  margin-left: 198px;
+  width: 50%;
+  height: 40px;
+}
+.email {
+  margin-left: 183px;
+  width: 50%;
+  height: 40px;
+}
+.token {
+  margin-left: 92px;
+  width: 50%;
+  height: 40px;
+}
+.privacy {
+  margin-left: 190px;
+  font-size: 22px;
+}
+.privacy-check {
+  padding: 100px;
+  width: 30px;
+  height: 20px;
+}
+.validationmsg {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: white;
+  color: red;
+  width: 450px;
+  height: 60px;
+  margin-left: 190px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fa5959;
+  color: white;
+  border: 3px solid;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-left: 350px;
+  font-family: "Courier Prime", monospace;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  input {
+    width: 10px;
+    height: 20px;
+    font-size: 10px;
+   
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .name,
+  .email,
+  .token {
+    margin-left: 0;
+    width: 250px;
+    height: 20px;
+  }
+
+  .privacy {
+    margin-left: 0;
+    width: 250px;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .privacy-check {
+    padding-left: 0;
+    width: 30px;
+    height: 15px;
+    padding-top: 5px;
+  }
+  .validationmsg {
+    padding: 2px 0 10px 0;
+    padding-top: 0;
+    margin-left: 0px;
+    text-align: center;
+    height: 20px;
+    width: 170px;
+    font-size: 8px;
+  }
+  button {
+    margin-left: 0px;
+  }
+}
