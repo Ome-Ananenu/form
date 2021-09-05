@@ -16,6 +16,7 @@ body {
 .form-wrapper {
   display: flex;
   background-color: #fa5959;
+  border-radius: 50px;
   flex-direction: column;
   margin: 0 auto;
   padding: 50px 0;
